@@ -103,7 +103,21 @@
         <entry key="cached_network_image">
           <value>
             <list>
-              <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.0.0/lib" />
+              <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.1.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="cached_network_image_platform_interface">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_platform_interface-1.0.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="cached_network_image_web">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_web-1.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -177,6 +191,13 @@
             </list>
           </value>
         </entry>
+        <entry key="dartz">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.0-nullsafety.2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="dio">
           <value>
             <list>
@@ -244,6 +265,13 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.1.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_dotenv">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_dotenv-5.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -733,7 +761,9 @@
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner_core-7.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-5.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.1.1/lib" />
-      <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.1.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_platform_interface-1.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_web-1.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.2.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/lib" />
@@ -744,6 +774,7 @@
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/convert-3.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.0-nullsafety.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib" />
@@ -753,6 +784,7 @@
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-7.0.1/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.6.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.1.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_dotenv-5.0.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/freezed-0.14.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/freezed_annotation-0.14.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/frontend_server_client-2.1.0/lib" />

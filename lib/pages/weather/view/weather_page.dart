@@ -2,6 +2,12 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:simple_weather_app/injection/injection.dart';
+import 'package:simple_weather_app/pages/weather/cubit/weather_cubit.dart';
+import 'package:simple_weather_app/pages/weather/models/weather.dart';
+import 'package:simple_weather_app/pages/weather/repositories/i_weather_repository.dart';
+import 'package:simple_weather_app/shared/reusable_widgets.dart';
 import 'package:simple_weather_app/values/app_colors.dart';
 import 'package:simple_weather_app/values/app_theme.dart';
 
@@ -10,17 +16,33 @@ class WeatherPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget nextView = Container();
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: gradientSystemStyle,
       child: Scaffold(
+        extendBodyBehindAppBar: true,
         appBar: _mainAppBar(context),
         body: Container(
           decoration: _weatherBackground(),
-          child: const Center(
-            child: Text('Weather page here.'),
+          child: BlocProvider<WeatherCubit>(
+            create: (BuildContext context) =>
+                WeatherCubit(getIt<IWeatherRepository>())
+                  ..fetchWeather('Katowice'),
+            child: BlocBuilder<WeatherCubit, WeatherState>(
+              builder: (BuildContext context, WeatherState state) {
+                state.when(
+                  initial: () => nextView = ReusableWidgets.customLoading(),
+                  weatherLoading: () =>
+                      nextView = ReusableWidgets.customLoading(),
+                  weatherLoaded: (Weather weather) =>
+                      nextView = _buildWeatherDataScreen(weather),
+                  weatherLoadError: (String error) => nextView = Text(error),
+                );
+                return nextView;
+              },
+            ),
           ),
         ),
-        extendBodyBehindAppBar: true,
       ),
     );
   }
@@ -72,6 +94,12 @@ class WeatherPage extends StatelessWidget {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
       ),
+    );
+  }
+
+  Widget _buildWeatherDataScreen(Weather weather) {
+    return Center(
+      child: Text(weather.weather[0].description),
     );
   }
 }
