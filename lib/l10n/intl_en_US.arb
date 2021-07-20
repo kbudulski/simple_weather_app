@@ -1,0 +1,16 @@
+{
+  "@@locale": "en_US",
+  "addCurrentLocation": "Add current location",
+  "addSomeToFavorite": "Add some places to favorites.",
+  "places": "Places",
+  "search": "Search",
+  "feelsLike": "Feels like",
+  "humidity": "Humidity",
+  "pressure": "Pressure",
+  "settings": "Settings",
+  "weatherSettings": "Weather settings",
+  "degree": "Unit",
+  "fahrenheit": "Fahrenheit",
+  "celsius": "Celsius",
+  "error": "Error"
+}

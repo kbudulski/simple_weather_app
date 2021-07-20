@@ -9,10 +9,13 @@ class ReusableWidgets {
       elevation: 0,
     );
   }
+
   static Widget customLoading() {
-    return const Center(
-      child: CircularProgressIndicator(
-        strokeWidth: 2,
+    return const Scaffold(
+      body: Center(
+        child: CircularProgressIndicator(
+          strokeWidth: 2,
+        ),
       ),
     );
   }

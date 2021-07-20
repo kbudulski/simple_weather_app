@@ -1,24 +1,37 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'weather.freezed.dart';
-part 'weather.g.dart';
+part 'weather_raw.freezed.dart';
+
+part 'weather_raw.g.dart';
 
 @freezed
-class Weather with _$Weather {
-  const factory Weather(
-      List<WeatherElement> weather,
-    String base,
+class WeatherRaw with _$WeatherRaw {
+  const factory WeatherRaw(
+    Coord coord,
+    List<WeatherElement> weather,
+    String? base,
     Main main,
-    int visibility,
-    Wind wind,
-    Clouds clouds,
-    int dt,
+    int? visibility,
+    Wind? wind,
+    Clouds? clouds,
+    int? dt,
     int id,
     String name,
-    int cod,
-  ) = _Weather;
+    int? cod,
+  ) = _WeatherRaw;
 
-  factory Weather.fromJson(Map<String, dynamic> json) => _$WeatherFromJson(json);
+  factory WeatherRaw.fromJson(Map<String, dynamic> json) =>
+      _$WeatherRawFromJson(json);
+}
+
+@freezed
+class Coord with _$Coord {
+  const factory Coord(
+    double lon,
+    double lat,
+  ) = _Coord;
+
+  factory Coord.fromJson(Map<String, dynamic> json) => _$CoordFromJson(json);
 }
 
 @freezed
@@ -54,7 +67,8 @@ class WeatherElement with _$WeatherElement {
     String icon,
   ) = _WeatherElement;
 
-  factory WeatherElement.fromJson(Map<String, dynamic> json) => _$WeatherElementFromJson(json);
+  factory WeatherElement.fromJson(Map<String, dynamic> json) =>
+      _$WeatherElementFromJson(json);
 }
 
 @freezed
@@ -62,7 +76,7 @@ class Wind with _$Wind {
   const factory Wind(
     double speed,
     int deg,
-    double gust,
+    double? gust,
   ) = _Wind;
 
   factory Wind.fromJson(Map<String, dynamic> json) => _$WindFromJson(json);

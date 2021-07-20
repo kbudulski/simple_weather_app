@@ -1,13 +1,52 @@
 part of 'weather_cubit.dart';
 
-@freezed
-class WeatherState with _$WeatherState {
-  const factory WeatherState.initial() = _Initial;
+@immutable
+abstract class WeatherState extends Equatable {
+  const WeatherState();
 
-  const factory WeatherState.weatherLoading() = _WeatherLoading;
+  @override
+  List<Object> get props => <Object>[];
+}
 
-  const factory WeatherState.weatherLoaded(Weather weather) = _WeatherLoaded;
+class WeatherInitial extends WeatherState {
+  const WeatherInitial();
+}
 
-  const factory WeatherState.weatherLoadError(String errorMsg) =
-      _WeatherLoadError;
+class WeatherLoading extends WeatherState {}
+
+class WeatherSilentLoading extends WeatherState {}
+
+class WeatherLoaded extends WeatherState {
+  const WeatherLoaded(
+    this.weather,
+    this.forecast, {
+    required this.isFavorite,
+    required this.isLocatedByRadar,
+  });
+
+  final Weather weather;
+  final Forecast forecast;
+  final bool isFavorite;
+  final bool isLocatedByRadar;
+
+  @override
+  List<Object> get props =>
+      <Object>[weather, forecast, isFavorite, isLocatedByRadar];
+
+  @override
+  String toString() {
+    return 'WeatherLoaded{weather: ${weather.location}, forecast: $forecast, isFavorite: $isFavorite, isLocatedByRadar: $isLocatedByRadar}';
+  }
+}
+
+class WeatherLoadError extends WeatherState {
+  const WeatherLoadError(this.error);
+
+  final String error;
+}
+
+class WeatherInitialLoadError extends WeatherState {
+  const WeatherInitialLoadError(this.error);
+
+  final String error;
 }

@@ -1,5 +1,7 @@
-import 'package:simple_weather_app/pages/weather/models/weather.dart';
-
 abstract class WeatherApiService {
-  Future<dynamic> getWeather(String location);
+  Future<dynamic> getWeatherByCity(String location);
+
+  Future<dynamic> getWeatherByCords(double latitude, double longitude);
+
+  Future<dynamic> getForecastByCords(double latitude, double longitude);
 }

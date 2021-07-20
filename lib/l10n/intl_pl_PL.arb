@@ -1,0 +1,16 @@
+{
+  "@@locale": "pl_PL",
+  "addCurrentLocation": "Dodaj bieżącą lokalizację",
+  "addSomeToFavorite": "Dodaj lokacje do ulubionych.",
+  "places": "Miejsca",
+  "search": "Szukaj",
+  "feelsLike": "Odczuwalnie",
+  "humidity": "Wilgotność",
+  "pressure": "Ciśnienie",
+  "settings": "Ustawienia",
+  "weatherSettings": "Ustawienia pogody",
+  "degree": "Jednostka",
+  "fahrenheit": "Fahrenheit",
+  "celsius": "Celsjusz",
+  "error": "Błąd"
+}

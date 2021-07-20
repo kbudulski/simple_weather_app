@@ -35,9 +35,12 @@ linter:
 
     # Back to the 80s
     lines_longer_than_80_chars: false
-    
+
+    avoid_print: false
+
 analyzer:
   exclude:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
     - "**/*.config.dart"
+    - "**/generated/**"
